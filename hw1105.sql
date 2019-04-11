@@ -1,0 +1,4 @@
+SELECT IUCR, PrimaryDesc, SecondaryDesC
+FROM Codes
+WHERE IUCR = '0820' OR IUCR = '0460' OR IUCR = '0486'
+ORDER BY IUCR ASC
