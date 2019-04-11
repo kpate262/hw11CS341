@@ -1,4 +1,4 @@
-SELECT IUCR, COUNT(*) AS NumCrimes
+SELECT COUNT(IUCR) AS NumCrimes
 FROM Crimes
-GROUP BY IUCR
-ORDER BY NumCrimes DESC
+WHERE CrimeDate = '04/01/2015'
+GROUP BY CrimeDate
